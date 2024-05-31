@@ -13,11 +13,11 @@
         android:theme="@style/Theme.NewFirebase"
         tools:targetApi="31">
         <activity
-            android:name=".login"
+            android:name=".main"
             android:exported="false" />
         <activity
             android:name=".Signup"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,14 +25,21 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Bottomnavigation"
+            android:exported="false"
+            android:label="@string/title_activity_bottomnavigation" />
     </application>
 
 </manifest>
